@@ -1,5 +1,6 @@
 
 # Functions to simulate moves interact to the Rubick
+from cgi import test
 from operator import indexOf
 from unittest import result
 
@@ -109,9 +110,28 @@ def solution(instance):
     return D
 
 
-def print_solution(solution):
-    print(testData)
+def print_solution(solution,testData):
     print("Solving this cube...")
+    print("   {}{}   \n   {}{}   \n{}{} {}{} {}{} {}{}\n{}{} {}{} {}{} {}{}\n   {}{}   \n   {}{}   ".format(
+        testData[0],testData[1],
+        testData[3],testData[2],
+
+        testData[16],testData[17],
+        testData[4],testData[5],
+
+        testData[8],testData[9],
+        testData[12],testData[13],
+
+        testData[19],testData[18],
+        testData[7],testData[6],
+
+        testData[11],testData[10],
+        testData[15],testData[14],
+
+        testData[20],testData[21],
+        testData[23],testData[22]
+    ))
+
     print("Number of moves made to solve the cube: ")
     print(len(solution)-1)
     #print(solution)
@@ -125,7 +145,7 @@ testData = (
     "O", "B", "B", "B",
     "R", "Y", "B", "R")
 
-print_solution(solution(testData))
+print_solution(solution(testData),testData)
 
 #unccomment this to try suffer a rubik then solve
 # testData2 = (
@@ -135,6 +155,5 @@ print_solution(solution(testData))
 #      'W', 'W', 'W', 'W',
 #      'B', 'B', 'B', 'B',
 #      'R', 'R', 'R', 'R')
-
 
 # print_solution(solution(R(D(testData2))))
