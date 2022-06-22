@@ -1,5 +1,9 @@
 
 # Functions to simulate moves interact to the Rubick
+from operator import indexOf
+from unittest import result
+
+
 def B(pos):
     return (pos[9],  pos[10], pos[2], pos[3],
             pos[4],  pos[5], pos[6], pos[7],
@@ -80,14 +84,15 @@ def checkCubeStatus(tuple):
 
 
 # Modified from graphys.py obtained from CAB203 Blackboard
-def breadthFirst(u):
-    D = [{u}]  # D[0] = D_0 = {u}
-    if(checkCubeStatus(u)):
+def breadthFirst(instance):
+    D = [{instance}]  # D[0] = D_0 = {u}
+    if(checkCubeStatus(instance)):
+        print
         return D
-    return breadthFirstR(D, u)
+    return breadthFirstR(D, instance)
 
 
-def breadthFirstR(D, u):
+def breadthFirstR(D, instance):
     # variable to store all vertices in the current depth
     vD = set()
     for cubeConfig in D[-1]:
@@ -96,7 +101,7 @@ def breadthFirstR(D, u):
     for cubeConfig in Dnew[-1]:
             if checkCubeStatus(cubeConfig) == True:
                 return Dnew
-    return breadthFirstR(Dnew, u)
+    return breadthFirstR(Dnew, instance)
 
 # Modified from project example.
 def solution(instance):
@@ -109,6 +114,8 @@ def print_solution(solution):
     print("Solving this cube...")
     print("Number of moves made to solve the cube: ")
     print(len(solution)-1)
+    #print(solution)
+
 
 testData = (
     "G", "G", "W", "O",
@@ -118,4 +125,14 @@ testData = (
     "O", "B", "B", "B",
     "R", "Y", "B", "R")
 
+# testData2 = (
+#      'O', 'O', 'O', 'O',
+#      'Y', 'Y', 'Y', 'Y',
+#      'G', 'G', 'G', 'G',
+#      'W', 'W', 'W', 'W',
+#      'B', 'B', 'B', 'B',
+#      'R', 'R', 'R', 'R')
+
+
+# print_solution(solution(R(D(testData2))))
 print_solution(solution(testData))
