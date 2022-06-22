@@ -22,5 +22,12 @@ testData = (
     "O", "B", "B", "B",
     "R", "Y", "B", "R")
 ```
+3. Start debugging (F5) you can see the number of moves needed to solve the mixed Rubick:
+4. 
+```
+Solving this cube...
+Number of moves made to solve the cube:
+6
+```
 
 Please follow instruction in this [report](https://github.com/jtsdaniel/Rubick2x2-auto-solve/blob/master/Report.pdf) to understand more about valid input and algorithm analysis
