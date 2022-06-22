@@ -149,11 +149,11 @@ print_solution(solution(testData),testData)
 
 #unccomment this to try suffer a rubik then solve
 # testData2 = (
-#      'O', 'O', 'O', 'O',
-#      'Y', 'Y', 'Y', 'Y',
-#      'G', 'G', 'G', 'G',
-#      'W', 'W', 'W', 'W',
-#      'B', 'B', 'B', 'B',
-#      'R', 'R', 'R', 'R')
+#       'O', 'O', 'O', 'O',
+#       'Y', 'Y', 'Y', 'Y',
+#       'G', 'G', 'G', 'G',
+#       'W', 'W', 'W', 'W',
+#       'B', 'B', 'B', 'B',
+#       'R', 'R', 'R', 'R')
 
-# print_solution(solution(R(D(testData2))))
+# print_solution(solution(R(D(testData2))), R(D(testData2)))
