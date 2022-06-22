@@ -11,5 +11,16 @@ git clone https://github.com/jtsdaniel/Rubick2x2-auto-solve.git
 ```
 
 ## User guide:
+1. For a valid input of mixed Rubick you should go to this [website](https://www.grubiks.com/puzzles/rubiks-mini-cube-2x2x2/) to generate a mixed Rubick by yourself. The encode it into a string list of characters (have a look in [Instance Model section](https://github.com/jtsdaniel/Rubick2x2-auto-solve/blob/master/Report.pdf) in the report file.)
+2. Then you can change *testData* variable in ***Rubick2x2Solve.py*** file:
+```python
+testData = (
+    "G", "G", "W", "O",
+    "Y", "G", "O", "Y",
+    "R", "Y", "W", "G",
+    "R", "W", "W", "O",
+    "O", "B", "B", "B",
+    "R", "Y", "B", "R")
+```
 
 Please follow instruction in this [report](https://github.com/jtsdaniel/Rubick2x2-auto-solve/blob/master/Report.pdf) to understand more about valid input and algorithm analysis
