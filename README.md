@@ -1,4 +1,4 @@
-# Rubick2x2-auto-solver-system
+# Rubik2x2-auto-solver-system
 
 ***Description:*** The project focuses on building a system that can exactly figure out how many moves needed to solve a mixed 2x2Rubick, or shortest way to solve a mixed rubick. The project used [breadth first search](https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/tutorial/) algorithm to solve the problem. The project is for my learning purpose of more understanding in algorithm and complexity
 
