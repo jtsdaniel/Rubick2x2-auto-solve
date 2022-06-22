@@ -23,7 +23,7 @@ testData = (
     "R", "Y", "B", "R")
 ```
 3. Start debugging (F5) you can see the number of moves needed to solve the mixed Rubick:
-4. 
+
 ```
 Solving this cube...
 Number of moves made to solve the cube:
