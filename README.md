@@ -26,6 +26,12 @@ testData = (
 
 ```
 Solving this cube...
+   GG   
+   OW   
+OB YG RY RW
+BB YO GW OW
+   RY
+   RB
 Number of moves made to solve the cube:
 6
 ```
