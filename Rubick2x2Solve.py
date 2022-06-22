@@ -125,6 +125,9 @@ testData = (
     "O", "B", "B", "B",
     "R", "Y", "B", "R")
 
+print_solution(solution(testData))
+
+#unccomment this to try suffer a rubik then solve
 # testData2 = (
 #      'O', 'O', 'O', 'O',
 #      'Y', 'Y', 'Y', 'Y',
@@ -135,4 +138,3 @@ testData = (
 
 
 # print_solution(solution(R(D(testData2))))
-print_solution(solution(testData))
