@@ -1,3 +1,3 @@
 # Rubick2x2-auto-solve-system
 
-***Description:*** The project focuses on building a system that can automatically solve a 2x2 Rubick using minimum moves, or in other hand shortest way to solve a mixed rubick. 
+***Description:*** The project focuses on building a system that can figure out how many moves needed to solve a mixed Rubick, or shortest way to solve a mixed rubick. The project used breadth first search algorithm to solve the problem. 
